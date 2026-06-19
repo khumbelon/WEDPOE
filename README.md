@@ -24,15 +24,31 @@ css/style.css
 js/main.js
 images/*
 ---
-References:
-Afrihost. (2024). Shared Hosting - The Perfect Website Solution. [online] Available at: https://www.afrihost.com/website/hosting/ (Accessed: 14 November 2025).
+changelog 
+## [1.0.0] - 2026-04-19
+### Added
+- Initial website structure: index.html, about.html, contact.html
+- CSS styling in css/style.css 
+- JavaScript functionality in js/main.js
+- Service images and content
+- README with project description
+
+## [1.1.0] - 2026-04-19
+### Added
+- Google Maps iframe embed for contact page
+- Lightbox2 gallery for services section
+- Dynamic search bar for filtering services
+- SEO meta tags and alt text
+- Formspree integration with validation
 ---
 OpenAI. (2024). ChatGPT (May 24 version) [Large language model]. Accessed [Date of Conversation]. Available at: https://chat.openai.com/chat
 ---
 Orbit Media Studios. (2023). The State of the South African Web 2023. [online] Available at: https://www.orbitmedia.co.za/blog/state-of-the-south-african-web-2023/ (Accessed: 14 Nover 2025).
 ---
+
 World Wide Worx. (2023). The South African Digital Customer 2023.
 ---
+
 Acknowledgements
 I would like to acknowledge the use of OpenAI's ChatGPT (May 2024 version) in this project. The AI assistant was used for troubleshooting code errors, and brainstorming solutions for front-end layout challenges.
 
