@@ -35,3 +35,7 @@ World Wide Worx. (2023). The South African Digital Customer 2023.
 ---
 Acknowledgements
 I would like to acknowledge the use of OpenAI's ChatGPT (May 2024 version) in this project. The AI assistant was used for troubleshooting code errors, and brainstorming solutions for front-end layout challenges.
+
+-----
+how it looks on the laptop
+<img width="947" height="497" alt="image" src="https://github.com/user-attachments/assets/06d0ee05-e676-4f9e-8c5f-e9a6158a4364" />
