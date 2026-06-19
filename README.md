@@ -39,3 +39,7 @@ I would like to acknowledge the use of OpenAI's ChatGPT (May 2024 version) in th
 -----
 how it looks on the laptop
 <img width="947" height="497" alt="image" src="https://github.com/user-attachments/assets/06d0ee05-e676-4f9e-8c5f-e9a6158a4364" />
+----
+
+on phone 
+<img width="476" height="428" alt="image" src="https://github.com/user-attachments/assets/19ad1936-2781-4903-a370-213fb3a5b99d" />
