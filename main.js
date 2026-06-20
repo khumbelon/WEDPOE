@@ -548,7 +548,8 @@ function showQuickView(product) {
   }
 };
     
-    const detail = productDetails[product] || productDetails['chocolate-cake'];
+    const detail = productDetails[product] || productDetails['Manicure & Pedicure'];
+
     
     modalContent.innerHTML = `
         <h2>${detail.name}</h2>
