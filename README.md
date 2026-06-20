@@ -24,23 +24,7 @@ css/style.css
 js/main.js
 images/*
 ---
-changelog 
-## [1.0.0] - 2026-04-19
-### Added
-- Initial website structure: index.html, about.html, contact.html
-- CSS styling in css/style.css 
-- JavaScript functionality in js/main.js
-- Service images and content
-- README with project description
-
-## [1.1.0] - 2026-04-19
-### Added
-- Google Maps iframe embed for contact page
-- Lightbox2 gallery for services section
-- Dynamic search bar for filtering services
-- SEO meta tags and alt text
-- Formspree integration with validation
----
+References
 OpenAI. (2024). ChatGPT (May 24 version) [Large language model]. Accessed [Date of Conversation]. Available at: https://chat.openai.com/chat
 ---
 Orbit Media Studios. (2023). The State of the South African Web 2023. [online] Available at: https://www.orbitmedia.co.za/blog/state-of-the-south-african-web-2023/ (Accessed: 14 Nover 2025).
