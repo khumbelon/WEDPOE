@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hittie's Gloss & Beauty Studio" />
+    <meta name="description" content="Discover Hittie's Gloss & Beauty Studio in Soweto. Book lashes, makeup, and nails with our expert beauticians. Contact us today for your appointment." />
     <meta name="author" content="Hittie's Gloss & Beauty Studio" />
-    <title>Hittie's Gloss & Beauty Studio| Soweto</title>
+    <title>Hittie's Gloss & Beauty Studio | Soweto</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
+
    <body>
     <header class="header">
         <div class="inner wrap">
@@ -38,8 +39,8 @@
                 <article class="product-card">
                     <img src="images/1000354375.png" alt="Manicure & Pedicure" loading="lazy">
                     <h3>Manicure & Pedicure</h3>
-                    <p>Elegent and classic Nails .</p>
-                    <div class="price">320</div>
+                    <p>Elegant and classic Nails .</p>
+                    <div class="price">R320</div>
                     <button class="quick-view" data-product="Manicure & Pedicure">Quick View</button>
                 </article>
                 <article class="product-card">
@@ -58,9 +59,21 @@
                 </article>
             </div>
         </section>
+     <section>
+     <h2 class="text-center">Our Work Gallery</h2>   
+    <div class="gallery">
+    <img src="images/1000354375.png" alt="Manicure & Pedicure" onclick="openLightbox(this)">
+    <img src="images/1000354377.jpg" alt="Lashes" onclick="openLightbox(this)">
+    <img src="images/1000354391.jpg" alt="MakeUp" onclick="openLightbox(this)">
+     </div>
+
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="">
+   </div>
+   </section>
         <!-- review section -->
              <section class="testimonials wrap">
-            <h2 class="text-center">Reviews</h2>
+            <h2 class="text-center">Testimonial</h2>
             <div class="testimonial-slider">
                 <div class="testimonial active">
                     <p>"The best beauty studio  in Soweto! beauty perfected in every detail."</p>
@@ -99,6 +112,4 @@
     <script src="js/main.js"></script>
 
 </body>
-
-
 </html>
