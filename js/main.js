@@ -178,13 +178,6 @@ function submitForm(form) {
         submitButton.disabled = false;
     }, 2000);
 }
-
-function showBookingConfirmation(form) {
-    const formData = new FormData(form);
-    alert(`✅ Thank you, ${formData.get('fullname')}! Your appointment for ${formData.get('service')} on ${formData.get('date')} has been received.`);
-    form.reset();
-}
-
 // Booking Form Specific Functionality
 // ---------------- Booking Form ----------------
 function initBookingForm() {
@@ -230,7 +223,6 @@ function updateBookingSummary() {
     
     totalAmount.textContent = total;
 }
-
 function showBookingConfirmation(form) {
     const formData = new FormData(form);
     const confirmationModal = document.getElementById('bookingConfirmation');
@@ -238,28 +230,34 @@ function showBookingConfirmation(form) {
     
     if (!confirmationModal || !confirmationDetails) return;
     
-    const bookingDetails = {
-        name: formData.get('name'),
-        item: formData.get('item'),
-        quantity: formData.get('quantity'),
-        date: formData.get('date'),
-        time: formData.get('time')
-    };
-    
-    confirmationDetails.innerHTML = `
-        <p><strong>Thank you, ${bookingDetails.name}!</strong></p>
-        <p>Your booking for ${bookingDetails.quantity} x ${bookingDetails.item} has been received.</p>
-        <p><strong>Pickup:</strong> ${bookingDetails.date} between ${bookingDetails.time}</p>
-        <p>Booking Reference: #HG${Date.now().toString().slice(-6)}</p>
-    `;
-    
-    confirmationModal.style.display = 'block';
+   const bookingDetails = {
+    fullname: formData.get('fullname'), // ✅ matches your form field
+    phone: formData.get('phone'),
+    email: formData.get('email'),
+    service: formData.get('service'),
+    message: formData.get('message'),
+    date: formData.get('date'),
+    time: formData.get('time') // add this if your form has a time field
+};
+
+confirmationDetails.innerHTML = `
+    <p><strong>Thank you, ${bookingDetails.fullname}!</strong></p>
+    <p>Your booking for <strong>${bookingDetails.service}</strong> has been received.</p>
+    <p>We will contact you at ${bookingDetails.phone} / ${bookingDetails.email} to confirm.</p>
+    <p><strong>Pickup:</strong> ${bookingDetails.date} at ${bookingDetails.time}</p>
+    <p>Booking Reference: #SD${Date.now().toString().slice(-6)}</p>
+`;
+
+
+confirmationModal.style.display = 'block';
+
+
     
     // Reset form
     form.reset();
     updateBookingSummary();
     
-    // Setup new booking button
+    // Setup new order button
     const newBookingBtn = document.getElementById('newBooking');
     if (newBookingBtn) {
         newBookingBtn.addEventListener('click', () => {
@@ -548,8 +546,7 @@ function showQuickView(product) {
   }
 };
     
-    const detail = productDetails[product] || productDetails['Manicure & Pedicure'];
-
+    const detail = productDetails[product] || productDetails['chocolate-cake'];
     
     modalContent.innerHTML = `
         <h2>${detail.name}</h2>
@@ -679,3 +676,4 @@ function closeLightbox() {
         lightboxImg.alt = '';
     }
 }
+
