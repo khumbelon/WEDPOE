@@ -1,16 +1,29 @@
  changelog 
-### Added
-- Initial website structure: index.html, about.html, contact.html
-- CSS styling in css/style.css 
-- JavaScript functionality in js/main.js
-- Service images and content
-- README with project 
-### Added
-- Google Maps iframe embed for contact page
-- Lightbox2 gallery for services section
-- Dynamic search bar for filtering services
-- SEO meta tags and alt text
-- Formspree integration with validation
----
-## Number of Deployment 
-- 25 deployments
+Update README.md
+Rename style.css to css/style.css
+Update ChangeLog on README.md
+Create a changelog file
+Update the Image File
+Update index.html file
+Updating main.js file
+Updating contact.html
+Update README.md
+Update README.md
+Update main.js on costant
+Update index.html
+Update index.html
+Rename main.js to js/main.js
+adding gallery index.html
+adding css about.html
+Updating booking confirmation main.js
+Updating booking confirmation main.js
+Updating CSS on booking form style.css
+Update style.css
+Update booking form style.css
+Update contact.html
+Update contact.html
+Restore reset and base styles in style.css
+Revise Changelog for version updates and deployments
+Revise Changelog for version updates and deployments
+Add social media links to contact page
+
