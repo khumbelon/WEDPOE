@@ -122,7 +122,7 @@ form.addEventListener('submit', (e) => {
   confirmationDetails.innerHTML = `
     <p><strong>Thank you, ${bookingDetails.fullname}!</strong></p>
     <p>Your booking for <strong>${bookingDetails.service}</strong> has been received.</p>
-    <p><strong>Appointment Time & Date:</strong> ${bookingDetails.date} at ${bookingDetails.time}</p>
+    <p><strong>Appointment Date & Time:</strong> ${bookingDetails.date} at ${bookingDetails.time}</p>
     <p>Booking Reference: #SD${Date.now().toString().slice(-6)}</p>
   `;
 
