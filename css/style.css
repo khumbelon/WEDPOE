@@ -730,7 +730,7 @@ body {
   font-family: inherit;
 }
 .required{
-    color:#dc3545 red ;
+    color:#dc3545 ;
 }
 #bookingForm button {
   background-color: rgba(165, 42, 42, 0.758);
