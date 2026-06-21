@@ -703,7 +703,7 @@ body {
     }
 }
  /* Booking Form Styling */
-#bookingForm {
+.bookingForm {
   max-width: 500px;
   margin: 2rem auto;
   padding: 20px;
@@ -712,16 +712,16 @@ body {
   border-radius: 8px;
 }
 
-#bookingForm label {
+.bookingForm label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
   color: #333;
 }
 
-#bookingForm input,
-#bookingForm select,
-#bookingForm textarea {
+.bookingForm input,
+.bookingForm select,
+.bookingForm textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -732,7 +732,7 @@ body {
 .required {
   color: red;
 }
-#bookingForm button {
+.bookingForm button {
   background-color: rgba(165, 42, 42, 0.758);
   color: #fff;
   border: none;
@@ -743,12 +743,12 @@ body {
   transition: background 0.3s ease;
 }
 
-#bookingForm button:hover {
+.bookingForm button:hover {
   background-color: brown;
 }
 
 /* Confirmation Modal */
-#confirmationModal {
+.confirmationModal {
   display: none; /* hidden until JS shows it */
   position: fixed;
   top: 0;
@@ -759,7 +759,7 @@ body {
   z-index: 1000;
 }
 
-#confirmationModal #confirmationDetails {
+.confirmationModal #confirmationDetails {
   background: #fff;
   max-width: 400px;
   margin: 10% auto;
@@ -768,7 +768,7 @@ body {
   text-align: center;
 }
 
-#confirmationModal p {
+.confirmationModal p {
   margin: 10px 0;
   color: #333;
 }
