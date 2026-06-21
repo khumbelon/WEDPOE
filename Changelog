@@ -1,13 +1,10 @@
-changelog 
-## [1.0.0] - 2026-04-19
+ changelog 
 ### Added
 - Initial website structure: index.html, about.html, contact.html
 - CSS styling in css/style.css 
 - JavaScript functionality in js/main.js
 - Service images and content
-- README with project description
-
-## [1.1.0] - 2026-04-19
+- README with project 
 ### Added
 - Google Maps iframe embed for contact page
 - Lightbox2 gallery for services section
@@ -15,3 +12,5 @@ changelog
 - SEO meta tags and alt text
 - Formspree integration with validation
 ---
+## Number of Deployment 
+- 25 deployments
