@@ -38,11 +38,11 @@
                     </div>
                     <div class="contact-item">
                         <h3>📞 Phone</h3>
-                        <p>+27 78 8168 676</p>
+                        <p>+27 763683514</p>
                     </div>
                     <div class="contact-item">
                         <h3>📧 Email</h3>
-                        <p>hitekanimaluleke0@gmail.com</p>
+                        <p>khumbelo3514@gmail.com</p>
                     </div>
                     <div class="contact-item">
                         <h3>🕒 Opening Hours</h3>
@@ -60,11 +60,10 @@
   </div>
 </div>                  
 
-<!-- Booking Form Section -->
-<div class="card">
-  <h2 class="text-center">Book Your Appointment</h2>
-  <form id="bookingForm" class="booking-form">
-    <label>Full Name <span class="required">*</span></label>
+<section class="wrap">
+  <h2>Book an Appointment</h2>
+  <form id="bookingForm">
+     <label>Full Name <span class="required">*</span></label>
     <input type="text" name="fullname" required>
 
     <label>Telephone Number <span class="required">*</span></label>
@@ -81,17 +80,56 @@
       <option value="nails">Nails</option>
     </select>
 
-    <label>Your Message</label>
-    <textarea name="message" rows="2"></textarea>
-
     <label>Date <span class="required">*</span></label>
     <input type="date" name="date" required>
 
+     <label>Time <span class="required">*</span></label>
+    <input type="time" name="time" required>
+
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
     <button type="submit">Book Now</button>
   </form>
+</section>
+
+<!-- Confirmation Modal -->
+<div id="confirmationModal" style="display:none;">
+  <div id="confirmationDetails"></div>
 </div>
 
 </main>
-    
+<script>
+const form = document.getElementById('bookingForm');
+const confirmationModal = document.getElementById('confirmationModal');
+const confirmationDetails = document.getElementById('confirmationDetails');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+
+  const bookingDetails = {
+    fullname: formData.get('fullname'),
+    phone: formData.get('phone'),
+    email: formData.get('email'),
+    service: formData.get('service'),
+    message: formData.get('message'),
+    date: formData.get('date'),
+    time: formData.get('time') // ✅ now included
+  };
+
+  confirmationDetails.innerHTML = `
+    <p><strong>Thank you, ${bookingDetails.fullname}!</strong></p>
+    <p>Your booking for <strong>${bookingDetails.service}</strong> has been received.</p>
+    <p><strong>Pickup:</strong> ${bookingDetails.date} at ${bookingDetails.time}</p>
+    <p>Booking Reference: #SD${Date.now().toString().slice(-6)}</p>
+  `;
+
+  confirmationModal.style.display = 'block';
+});
+
+</script>
+  <script src="js/main.js"></script>  
 </body>
 </html>
