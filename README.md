@@ -17,6 +17,7 @@ Our Mission Enhance clients natural beauty through innovative, high-quality prod
 Our Vision To become one of South African leading luxury beauty studios, known for exceptional customer service and treatments
 ---
 Files:
+---
 index.html (Home)
 about.html (About)
 contact.html (Contact)
@@ -24,22 +25,20 @@ css/style.css
 js/main.js
 images/*
 ---
-References
+References:
+---
 OpenAI. (2024). ChatGPT (May 24 version) [Large language model]. Accessed [Date of Conversation]. Available at: https://chat.openai.com/chat
 ---
 Orbit Media Studios. (2023). The State of the South African Web 2023. [online] Available at: https://www.orbitmedia.co.za/blog/state-of-the-south-african-web-2023/ (Accessed: 14 Nover 2025).
 ---
-
 World Wide Worx. (2023). The South African Digital Customer 2023.
 ---
-
 Acknowledgements
+----
 I would like to acknowledge the use of OpenAI's ChatGPT (May 2024 version) in this project. The AI assistant was used for troubleshooting code errors, and brainstorming solutions for front-end layout challenges.
-
 -----
 how it looks on the laptop
 <img width="947" height="497" alt="image" src="https://github.com/user-attachments/assets/06d0ee05-e676-4f9e-8c5f-e9a6158a4364" />
 ----
-
 on phone 
 <img width="476" height="428" alt="image" src="https://github.com/user-attachments/assets/19ad1936-2781-4903-a370-213fb3a5b99d" />
